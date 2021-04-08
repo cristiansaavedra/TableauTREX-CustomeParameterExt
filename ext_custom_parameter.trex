@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?> 
+  <manifest manifest-version="0.1" xmlns="http://www.tableau.com/xml/extension_manifest">
+    <dashboard-extension id="com.sample.parameter" extension-version="1.0.0">
+      <default-locale>en_US</default-locale>
+      <name resource-id="name"/>
+      <description>Custom Parameter Extension</description>
+      <author name="Cristian Saavedra Desmoineaux" email="cristian.saavedra.desmoineaux@gmail.com" organization="" website="https://medium.com/@cristiansaavedra"/>
+      <min-api-version>1.0</min-api-version>
+      <source-location>
+        <url>https://custom-parameter.glitch.me/</url> 
+      </source-location>
+      <icon></icon>
+      <context-menu>
+        <configure-context-menu-item />
+      </context-menu>
+    </dashboard-extension>
+    <resources>
+      <resource id="name">
+        <text locale="en_US">Custom Parameter</text>
+      </resource>
+    </resources>
+  </manifest>

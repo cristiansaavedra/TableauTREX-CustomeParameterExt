@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Parameter</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://extensions.tableauusercontent.com/resources/tableau.extensions.1.latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="/config.js" defer></script>
+  </head>
+  <body>
+    <div id="app" class="config">
+      <p class="title">
+        Configure Custom Parameter
+      </p>
+      <p class="label">
+        Select a worksheet with your data
+      </p>
+      <select class="configInput" v-model="worksheet">
+        <option v-for="option in worksheets" v-bind:value="option">
+          {{ option }}
+        </option>
+      </select>
+      <p class="label">
+        Select the column to pull data from
+      </p>
+      <select class="configInput" v-model="field">
+        <option v-for="option in fields" v-bind:value="option">
+          {{ option }}
+        </option>
+      </select>  
+      <p class="label">
+        Select a parameter to update values from column
+      </p>
+      <select class="configInput" v-model="updateParameter">
+        <option v-for="option in parameters" v-bind:value="option">
+          {{ option }}
+        </option>
+      </select>
+      <p class="label">
+        Select a parameter to trigger changes into previous param
+      </p>
+      <select class="configInput" v-model="listenParameter">
+        <option v-for="option in parameters" v-bind:value="option">
+          {{ option }}
+        </option>
+      </select>       
+      <button class="primaryBtn" v-on:click="save">
+        Save
+      </button>
+    </div>
+  </body>
+</html>
