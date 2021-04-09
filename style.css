@@ -37,23 +37,20 @@ body {
   margin: 0;
 }
 
-.dashboardInput {
-  -webkit-appearance: none;
+.dashboardInput {  
+  /*-webkit-appearance: none;*/
+  -webkit-appearance: menulist-button;
   width: 100%;
   border: 1px solid #ffffff;
   padding: 3px 24px 3px 6px;
-  /*background-color: #F6F7F8;*/
-  /*font-family: 'Tableau Regular';*/
-  font-size: 16px;
+  background-color: #F6F7F8;
+  font-family: "Tableau Regular", Arial, Helvetica,  sans-serif;
+  font-size: 16px;  
   outline: none;
   color: #6e677d;
   border-radius: 0;
 }
-/*
-.dashboardInput:hover {
-  border: 1px solid rgb(102, 102, 102);
-}
-*/
+
 .configInput {
   width: 100%;
   margin-bottom: 10px;
