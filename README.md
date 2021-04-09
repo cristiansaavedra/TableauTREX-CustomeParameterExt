@@ -12,4 +12,5 @@ I changed the extension author to me, to bring support and commit new features b
 
 Go to Tableau Server Settings and add the extension https://cristiansaavedra.github.io/TableauTREX-custom-parameter-ext/
 
-![image](https://user-images.githubusercontent.com/633437/114116876-7dad2800-98b3-11eb-9f27-a7f13c0e126e.png)
+![image](https://user-images.githubusercontent.com/633437/114117389-92d68680-98b4-11eb-8e6d-3ae90a9e0c30.png)
+
