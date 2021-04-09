@@ -11,7 +11,7 @@ let app = new Vue({
   methods: {
     // Pop open configure window
     configure: async function configure() {
-      const url = `${window.location.origin}/config.html`;
+      const url = `${window.location.href}/config.html`;
       await tableau.extensions.ui.displayDialogAsync(url, "", {
         width: 500,
         height: 500
